@@ -1,0 +1,14 @@
+services:
+  learning-hub:
+    build: .
+    container_name: eureka-boom-learning-hub
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${APP_PORT:-3000}:3000"
+    environment:
+      PORT: 3000
+      NODE_ENV: production
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data

@@ -1,0 +1,18 @@
+{
+  "name": "ai-creative-learning-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "课程、工具、作品与成长记录的一站式学习空间",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:migrate": "node db/migrate.js",
+    "db:import-json": "node db/import-store-json.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.5"
+  }
+}

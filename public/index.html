@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eureka Boom Future Engineering Lab：课程、项目、作品与成长记录。" />
+    <title>Eureka Boom · Future Engineering Lab</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23100f14'/%3E%3Ccircle cx='24' cy='24' r='15' fill='%237a20c8'/%3E%3Ccircle cx='42' cy='42' r='15' fill='%23c4ff32'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#/dashboard" aria-label="回到 Eureka Boom 工作台"><span class="brand-mark"><img src="/eureka-boom-logo.jpg" alt="Eureka Boom 标志" /></span><span><small>EUREKA BOOM</small>Future Engineering<br />Lab</span></a>
+        <div class="sidebar-label">STUDIO TREE</div>
+        <nav id="tree-nav" class="tree-nav" aria-label="平台树状导航">
+          <a data-route="/dashboard" href="#/dashboard"><span class="tree-icon">◈</span>工作台首页</a>
+          <div class="tree-group"><p><span>01</span>学习地图</p><a data-route="/path" href="#/path">未来工程路径</a><a data-route="/roadmap" href="#/roadmap">四学期学习计划</a><a data-route="/courses" href="#/courses">课程库</a><div id="course-tree" class="tree-children"></div></div>
+          <div class="tree-group"><p><span>02</span>工作台</p><a data-route="/tasks" href="#/tasks">任务中心</a><a data-route="/growth" href="#/growth">我的成长轨迹</a><a data-route="/resources" href="#/resources">课堂工具箱</a><a data-route="/ml-lab" href="#/ml-lab">可视化 AI 实验室</a><a data-route="/downloads" href="#/downloads">课程下载中心</a><a data-route="/showcase" href="#/showcase">作品体验区</a></div>
+          <div class="tree-group"><p><span>03</span>社区与支持</p><a data-route="/community" href="#/community">学生社区</a><a data-route="/parents" href="#/parents">家长观察台</a><a data-route="/teacher" href="#/teacher">教师控制台</a></div>
+        </nav>
+        <div class="sidebar-footer"><span class="signal"></span><div><b>MISSION CONTROL</b><small>本地演示模式</small></div></div>
+      </aside>
+      <main class="workspace">
+        <header class="workspace-header"><div id="breadcrumb" class="breadcrumb">Eureka Boom / 工作台首页</div><div class="header-status"><span></span>FUTURE ENGINEERING ONLINE</div></header>
+        <div id="app" class="page-host" aria-live="polite"></div>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
